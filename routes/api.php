@@ -26,3 +26,6 @@ Route::get('employee/{id}', 'App\Http\Controllers\EmployeeController@getEmployee
 
 //add Employee
 Route::post('addEmployee', 'App\Http\Controllers\EmployeeController@addEmployee');
+
+//Update Employee
+Route::put('updateEmployee/{id}','App\Http\Controllers\EmployeeController@updateEmployee');
