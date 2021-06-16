@@ -18,4 +18,9 @@ class EmployeeController extends Controller
         }
         return response()->json($employee::find($id),200);
     }
+
+    public function addEmployee(Request $request){
+        $employee= Employee::create($request->all());
+        return response($employee,201);
+    }
 }

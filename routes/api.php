@@ -23,3 +23,6 @@ Route::get('employees', 'App\Http\Controllers\EmployeeController@getEmployee');
 
 //Get specific employee detail
 Route::get('employee/{id}', 'App\Http\Controllers\EmployeeController@getEmployeeById');
+
+//add Employee
+Route::post('addEmployee', 'App\Http\Controllers\EmployeeController@addEmployee');
