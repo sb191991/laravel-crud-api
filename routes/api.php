@@ -29,3 +29,6 @@ Route::post('addEmployee', 'App\Http\Controllers\EmployeeController@addEmployee'
 
 //Update Employee
 Route::put('updateEmployee/{id}','App\Http\Controllers\EmployeeController@updateEmployee');
+
+//delete Employee
+Route::delete('deleteEmployee/{id}', 'App\Http\Controllers\EmployeeController@deleteEmployee');
